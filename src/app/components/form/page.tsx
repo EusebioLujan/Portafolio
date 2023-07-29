@@ -71,6 +71,7 @@ export default function Contact(): JSX.Element {
                 placeHolder="Escribe tu correo"
                 error=""
                 label="Correo Electrónico"
+                type="email"
                 onChange={handleInputChange}
               />
               <Input
@@ -87,7 +88,7 @@ export default function Contact(): JSX.Element {
                   name="comentario"
                   value={formData.comentario}
                   placeholder="Escribe tu comentario"
-                  className="w-full h-32 resize-none rounded-md border-2 border-slate-300 shadow-sm shadow-white"
+                  className="w-full h-32 resize-none rounded-md border-2 border-slate-300 shadow-sm shadow-white text-black"
                   onChange={handleInputChange}
                 />
               </div>
