@@ -20,7 +20,8 @@ export default function Landing() {
 
   return (
     <>
-      <div className="flex justify-center items-center px-10 min-h-[91.4vh]">
+    <p id="inicio"className="my-20 text-[#0F212E] hidden">a</p>
+      <div  className="flex justify-center items-center px-10 min-h-[91.4vh]">
         <div className="flex flex-col w-8/12 mt-10 items-center justify-center text-center">
           <div className="text-5xl mx-16 pb-52 pl-20 text-column">
             {lines.map((line, index) => (
