@@ -25,3 +25,47 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.typing-animation {
+  display:block;
+  font-family: monospace;
+  white-space: nowrap;
+  width: 20ch;
+  animation: typing 3s steps(40), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+.delay-1 {
+  animation-delay: 0s; /* Sin retraso para "Hola, soy" */
+}
+
+.delay-2 {
+  animation-delay: 2s; /* 2 segundos de retraso para "Marcelo Lujan" */
+}
+
+.delay-3 {
+  animation-delay: 5s; /* 4 segundos de retraso para "Front-End" */
+}
+
+.delay-4 {
+  animation-delay: 7s; /* 6 segundos de retraso para "Developer" */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+          .hidden-text {
+            visibility: hidden;
+          }
+          .show-text {
+            visibility: visible;
+          }
+          .text-column {
+            display: flex;
+            flex-direction: column;
+          }

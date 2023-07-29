@@ -1,10 +1,13 @@
+import Landing from './components/landing/page';
+import NavBar from './components/navbar/page';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     <section>
-      <h1>hola mundos</h1>
-     </section>
-    </main>
-  )
+    <>
+      <main className="min-h-screen   bg-[#0F212E] text-white">
+         <NavBar/>
+         <Landing/>  
+      </main>
+    </>
+  );
 }
