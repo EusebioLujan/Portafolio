@@ -69,3 +69,6 @@ body {
             display: flex;
             flex-direction: column;
           }
+          html {
+            scroll-behavior: smooth;
+          }
