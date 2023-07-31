@@ -9,15 +9,15 @@ export default function Project() {
       <p id="proyectos" className="my-20 text-[#0F212E]">
         {"a"}
       </p>
-      <div className="min-h-screen px-10">
+      <div className="min-h-screen px-10 w-full">
         <h1 className="text-6xl font-bold text-center underline mb-20">
           Proyectos
         </h1>
         {/* proyecto 1 */}
-        <div className="flex justify-around mx-20 mt-20">
+        <div className="flex flex-col md:justify-around">
           <div className="flex flex-col w-6/12">
             <h1 className="text-4xl">E-Mercado</h1>
-            <div className="bg-slate-500/50 w-full rounded-xl p-2 my-10 ml-52 z-40">
+            <div className="bg-slate-500/50 w-full rounded-xl">
               El proyecto de E-Mercado es una tienda en línea creada desde cero
               utilizando únicamente HTML y CSS para diseñar y maquetar la
               interfaz del sitio web. El objetivo principal es mostrar productos
@@ -42,10 +42,10 @@ export default function Project() {
           </div>
         </div>
         {/* proyecto 2 */}
-        <div className="flex justify-around mx-20 mt-36">
+        <div className="flex flex-col md:justify-around">
           <div className="flex flex-col w-6/12">
             <h1 className="text-4xl">Ejemplo de Proyecto</h1>
-            <div className="bg-slate-500/50 w-full rounded-xl p-2 my-10 ml-52 z-40">
+            <div className="bg-slate-500/50 w-full rounded-xl ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reiciendis eum inventore dolor, quod accusantium necessitatibus
               esse laboriosam harum saepe, possimus quia sunt ullam labore rerum
@@ -61,10 +61,10 @@ export default function Project() {
           </div>
         </div>
         {/* proyecto 3 */}
-        <div className="flex justify-around mx-20 mt-36">
+        <div className="flex flex-col md:justify-around">
           <div className="flex flex-col w-6/12">
             <h1 className="text-4xl">Ejemplo de Proyecto</h1>
-            <div className="bg-slate-500/50 w-full rounded-xl p-2 my-10 ml-52 z-40">
+            <div className="bg-slate-500/50 w-full rounded-xl ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reiciendis eum inventore dolor, quod accusantium necessitatibus
               esse laboriosam harum saepe, possimus quia sunt ullam labore rerum

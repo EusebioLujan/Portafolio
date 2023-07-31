@@ -1,4 +1,3 @@
-
 import About from "./components/about/page";
 import Footer from "./components/footer/page";
 import Contact from "./components/form/page";
@@ -7,13 +6,12 @@ import NavBar from "./components/navbar/page";
 import Project from "./components/project/page";
 import Skills from "./components/skills/page";
 import SocialMedia from "./components/social-media/page";
-import Prueba from "./components/utils/prueba"
+import Prueba from "./components/utils/prueba";
 export default function Home() {
   return (
     <>
-    
       <main className="min-h-screen scroll-pt-36 text-white">
-         <Prueba/> 
+        <Prueba />
         <NavBar />
         <Landing />
         <About />
@@ -21,7 +19,7 @@ export default function Home() {
         <Project />
         <Contact />
         <Footer />
-        <SocialMedia/>
+        <SocialMedia />
       </main>
     </>
   );
