@@ -1,12 +1,8 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../../style.css";
 
 export default function Prueba() {
-  /*          *     .        *  .    *    *   . 
- .  *  move your mouse to over the stars   .
- *  .  .   change these values:   .  *
-   .      * .        .          * .       */
   const STAR_COLOR = "#fff";
   const STAR_SIZE = 3;
   const STAR_MIN_SCALE = 0.2;
@@ -16,9 +12,8 @@ export default function Prueba() {
       ? window.innerWidth + window.innerHeight
       : 0) / 8;
 
-  const canvas =
-    typeof document !== "undefined" ? document.querySelector("canvas") : null;
-  const context = canvas?.getContext("2d");
+  const canvasRef = useRef(null);
+  const contextRef = useRef(null);
 
   let scale = 1, // device pixel ratio
     width,
@@ -32,15 +27,30 @@ export default function Prueba() {
 
   let touchInput = false;
 
-  generate();
-  resize();
-  step();
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const context = canvas.getContext("2d");
+    contextRef.current = context;
 
-  window.onresize = resize;
-  canvas.onmousemove = onMouseMove;
-  canvas.ontouchmove = onTouchMove;
-  canvas.ontouchend = onMouseLeave;
-  document.onmouseleave = onMouseLeave;
+    generate();
+    resize();
+    step();
+
+    window.onresize = resize;
+    canvas.onmousemove = onMouseMove;
+    canvas.ontouchmove = onTouchMove;
+    canvas.ontouchend = onMouseLeave;
+    document.onmouseleave = onMouseLeave;
+
+    // Clean up event listeners on unmount
+    return () => {
+      window.onresize = null;
+      canvas.onmousemove = null;
+      canvas.ontouchmove = null;
+      canvas.ontouchend = null;
+      document.onmouseleave = null;
+    };
+  }, []);
 
   function generate() {
     for (let i = 0; i < STAR_COUNT; i++) {
@@ -106,14 +116,14 @@ export default function Prueba() {
     width = window.innerWidth * scale;
     height = window.innerHeight * scale;
 
-    canvas.width = width;
-    canvas.height = height;
+    canvasRef.current.width = width;
+    canvasRef.current.height = height;
 
     stars.forEach(placeStar);
   }
 
   function step() {
-    context.clearRect(0, 0, width, height);
+    contextRef.current.clearRect(0, 0, width, height);
 
     update();
     render();
@@ -150,14 +160,14 @@ export default function Prueba() {
 
   function render() {
     stars.forEach((star) => {
-      context.beginPath();
-      context.lineCap = "round";
-      context.lineWidth = STAR_SIZE * star.z * scale;
-      context.globalAlpha = 0.5 + 0.5 * Math.random();
-      context.strokeStyle = STAR_COLOR;
+      contextRef.current.beginPath();
+      contextRef.current.lineCap = "round";
+      contextRef.current.lineWidth = STAR_SIZE * star.z * scale;
+      contextRef.current.globalAlpha = 0.5 + 0.5 * Math.random();
+      contextRef.current.strokeStyle = STAR_COLOR;
 
-      context.beginPath();
-      context.moveTo(star.x, star.y);
+      contextRef.current.beginPath();
+      contextRef.current.moveTo(star.x, star.y);
 
       var tailX = velocity.x * 2,
         tailY = velocity.y * 2;
@@ -166,9 +176,9 @@ export default function Prueba() {
       if (Math.abs(tailX) < 0.1) tailX = 0.5;
       if (Math.abs(tailY) < 0.1) tailY = 0.5;
 
-      context.lineTo(star.x + tailX, star.y + tailY);
+      contextRef.current.lineTo(star.x + tailX, star.y + tailY);
 
-      context.stroke();
+      contextRef.current.stroke();
     });
   }
 
@@ -207,7 +217,9 @@ export default function Prueba() {
   return (
     <>
       <div>
-        <canvas></canvas>
+        {typeof window !== "undefined" && (
+          <canvas ref={canvasRef}></canvas>
+        )}
       </div>
     </>
   );
