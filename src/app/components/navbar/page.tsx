@@ -5,9 +5,9 @@ import React from "react";
 export default function NavBar() {
   return (
     <>
-      <nav className="bg-bgnav min-h-[80px] text-white text-xl font-semibold sticky top-0 z-50 shadow-lg px-10">
-        <div className="flex items-center justify-around min-h-[80px]">
-          <Link href="#inicio">
+      <nav className=" min-h-[80px] items-center flex justify-center  text-white text-xl font-semibold sticky top-0 z-50 px-10 backdrop-blur-md bg-gray-700/50">
+        <div className="flex items-center justify-around min-h-[80px] w-10/12 ">
+          <Link href="/">
             <span className="hover:text-hoverorange hover:underline">
               Inicio
             </span>

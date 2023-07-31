@@ -1,43 +1,20 @@
-'use client'
-import Image from "next/image";
-import React, { useState, useEffect } from "react";
-import perfil from "../../../../public/perfil.jpeg"
+"use client";
+import React from "react";
+
 export default function Landing() {
-  const [currentLine, setCurrentLine] = useState(0);
-  const lines = [
-    { text: "Hola, soy", delay: 2000 },
-    { text: "Marcelo Lujan", delay: 3000 },
-    { text: "Front-End Developer", delay: 4000 },
-  ];
-
-  useEffect(() => {
-    if (currentLine < lines.length) {
-      const timeout = setTimeout(() => {
-        setCurrentLine((prevLine) => prevLine + 1);
-      }, lines[currentLine].delay);
-      return () => clearTimeout(timeout);
-    }
-  }, [currentLine]);
-
   return (
     <>
-      <div id="inicio" className="flex justify-center items-center px-10 min-h-[90vh] ">
-        <div className="flex flex-col w-8/12 mt-20 items-center justify-center text-center">
-          <div className="text-5xl mx-16 pb-52 pl-20 text-column">
-            {lines.map((line, index) => (
-              <span
-                key={index}
-                className={`font-normal text-textcolorv typing-animation delay-${index + 1} ${
-                  currentLine >= index ? "show-text" : "hidden-text"
-                }`}
-              >
-                {line.text}
-              </span>
-            ))}
+      <div
+        id="inicio"
+        className=" min-h-[90vh] w-full flex flex-col justify-center text-center m-auto"
+      >
+        <div className="w-10/12 flex flex-col justify-center m-auto">
+          <div className="text-4xl text-center flex flex-col justify-center">
+            <span className="text-7xl font-bold text-textcolorv">
+              Marcelo Lujan
+            </span>
+            <span>Front-End Developer</span>
           </div>
-        </div>
-        <div className="w-4/12 h-96 flex justify-center items-center rounded-full">
-        <Image className="h-96 w-8/12 rounded-full object-cover" src={perfil} alt="PERFIL" width={200} height={200}/>
         </div>
       </div>
     </>

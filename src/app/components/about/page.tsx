@@ -5,21 +5,21 @@ import about from "../../../../public/imageabout.jpg";
 export default function About() {
   return (
     <>
-    <p id="sobre-mi" className="my-20 text-[#0F212E]">a</p>
-      <div  className="min-h-screen px-10">
+    <p id="sobre-mi" className="my-20 text-[#0F212E] text-transparent">a</p>
+      <div  className=" w-10/12 px-10 flex flex-col justify-center items-center m-auto">
         <h1 className="text-6xl font-bold text-center underline mb-20">Sobre Mí</h1>
         <div className=" flex items-center justify-around w-full">
-          <div className="w-6/12">
+          <div className="w-5/12">
             <Image
-              className="rounded-full py-5 pl-16"
+              className="rounded-full "
               src={about}
               alt="image"
               width={600}
               height={600}
             />
           </div>
-          <div className="w-6/12">
-            <h1 className="pr-28 pt-10 text-2xl">
+          <div className="w-5/12">
+            <h1 className=" text-2xl">
               Soy
               <span className="text-hoverorange">
                 {" "}
