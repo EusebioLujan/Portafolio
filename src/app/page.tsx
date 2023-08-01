@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <main className="min-h-screen scroll-pt-36 text-white">
         <Prueba />
+        <div className="z-40">
         <NavBar />
         <Landing />
         <About />
@@ -19,7 +20,7 @@ export default function Home() {
         <Project />
         <Contact />
         <Footer />
-        <SocialMedia />
+        <SocialMedia /></div>
       </main>
     </>
   );
