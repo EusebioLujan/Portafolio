@@ -11,6 +11,7 @@ import Image from "next/image";
 export default function Skills() {
   return (
     <>
+    <div className="z-40 relative">
     <p id="skills" className="my-20 text-[#0F212E]">a</p>
       <div  className="min-h-screen px-10">
       <h1 className="text-6xl font-bold text-center underline mb-40">Skills</h1>
@@ -34,6 +35,7 @@ export default function Skills() {
           una visión orientada al usuario.
         </h1>
         </div>
+      </div>
       </div>
     </>
   );

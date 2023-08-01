@@ -11,17 +11,18 @@ export default function Home() {
   return (
     <>
       <main className="min-h-screen scroll-pt-36 text-white">
-        <div className="z-0">
-        <Prueba /></div>
-        <div className="z-40">
+        
+        <Prueba />
         <NavBar />
+        <div className="relative z-40">
         <Landing />
         <About />
         <Skills />
         <Project />
         <Contact />
         <Footer />
-        <SocialMedia /></div>
+        <SocialMedia />
+        </div>
       </main>
     </>
   );
