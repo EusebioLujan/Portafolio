@@ -12,12 +12,12 @@ export default function NavBar(): JSX.Element {
   };
 
   return (
-    <nav className="min-h-[80px] items-center flex justify-center w-full text-white md:text-xl text-sm px-2 font-semibold sticky top-0 z-50 md:px-10 backdrop-blur-md bg-gray-700/50">
-      <div className="flex items-center justify-between min-h-[80px] md:w-10/12 w-full">
+    <nav className="md:min-h-[80px] min-h-[60px] items-center flex justify-center w-full text-white md:text-xl text-sm px-2 font-semibold sticky top-0 z-50 md:px-10 backdrop-blur-md bg-gray-700/50">
+      <div className="flex items-center justify-between md:min-h-[80px] min-h-[60px] md:w-10/12 w-full">
         <Menu onToggle={toggleMenu} isOpen={isMenuOpen} />
         {/* Menú desplegable */}
         <div
-          className={`md:hidden fixed bottom-0 left-0 w-full text-center backdrop-blur-md bg-gray-700 h-44 p-1 transition-opacity top-20 ${
+          className={`md:hidden fixed bottom-0 left-0 w-full text-center backdrop-blur-md bg-gray-700/95 text-lg h-52 p-1 transition-opacity top-14 ${
             isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
         >

@@ -48,13 +48,13 @@ export default function Contact(): JSX.Element {
   return (
     <>
       <div className="min-h-screen px-10 items-center flex flex-col">
-        <h1 id="contacto" className="text-6xl font-bold text-center underline mb-20 mt-40">
+        <h1 id="contacto" className="text-4xl md:text-6xl font-bold text-center underline mb-10 mt-40">
           Contacto
         </h1>
-        <div className="flex flex-col justify-center items-center bg-bgnav/50 py-10 w-8/12 rounded-md shadow-md ">
+        <div className="flex flex-col justify-center items-center mb-20 bg-bgnav/50 py-10 sm:w-full md:w-6/12 rounded-md shadow-md relative z-20">
           {!formSubmitted ? (
             <form
-              className="flex flex-col justify-center items-center w-full"
+              className="flex flex-col justify-center items-center w-[300px] sm:w-96 relative z-40 "
               onSubmit={handleSubmit}
             >
               <Input
@@ -82,7 +82,7 @@ export default function Contact(): JSX.Element {
                 label="Asunto"
                 onChange={handleInputChange}
               />
-              <div className="py-2 w-6/12">
+              <div className="py-2 w-[250px] md:w-full">
                 <p className=" font-semibold pb-1">Comentario</p>
                 <textarea
                   name="comentario"

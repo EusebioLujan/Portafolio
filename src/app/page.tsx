@@ -14,15 +14,16 @@ export default function Home() {
         
         <Prueba />
         <NavBar />
-        <div className="relative z-40">
+        <div className="relative z-20 md:static">
         <Landing />
         <About />
         <Skills />
         <Project />
         <Contact />
-        <Footer />
-        <SocialMedia />
         </div>
+        <SocialMedia />
+        <Footer />
+        
       </main>
     </>
   );

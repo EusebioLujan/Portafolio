@@ -23,7 +23,7 @@ export default function Prueba() {
 
   let pointerX, pointerY;
 
-  let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.00052 };
+  let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0009 };
 
   let touchInput = false;
 
@@ -187,8 +187,8 @@ export default function Prueba() {
       let ox = x - pointerX,
         oy = y - pointerY;
 
-      velocity.tx = velocity.tx + (ox / 40) * scale * (touchInput ? 1 : -1);
-      velocity.ty = velocity.ty + (oy / 40) * scale * (touchInput ? 1 : -1);
+      velocity.tx = velocity.tx + (ox / 50) * scale * (touchInput ? 1 : -1);
+      velocity.ty = velocity.ty + (oy / 50) * scale * (touchInput ? 1 : -1);
     }
 
     pointerX = x;
@@ -216,9 +216,9 @@ export default function Prueba() {
 
   return (
     <>
-      <div className="z-10">
+      <div className="relative z-10">
         {typeof window !== "undefined" && (
-          <canvas className="z-10" ref={canvasRef}></canvas>
+          <canvas  ref={canvasRef}></canvas>
         )}
       </div>
     </>

@@ -5,20 +5,21 @@ import about from "../../../../public/imageabout.jpg";
 export default function About() {
   return (
     <>
-      <div id="sobre-mi" className=" w-10/12 min-h-screen px-10 flex flex-col justify-center items-center m-auto">
-        <h1 className="text-6xl font-bold text-center underline mb-40">Sobre Mí</h1>
-        <div className=" flex items-center flex-col md:justify-around w-full">
-          <div className="w-5/12">
+    <p id="sobre-mi" className="my-20 md:my-1 text-[#0F212E] text-none">a</p>
+      <div  className=" w-10/12 min-h-screen px-10 flex flex-col justify-center items-center m-auto">
+        <h1 className="text-4xl md:text-6xl font-bold text-center underline  mb-20 md:mb-40">Sobre Mí</h1>
+        <div className=" flex items-center flex-col md:flex-row md:justify-around w-full">
+          <div className="w-10/12 relative z-40">
             <Image
-              className="rounded-full "
+              className="rounded-full w-full md:w-6/12"
               src={about}
               alt="image"
               width={500}
               height={500}
             />
           </div>
-          <div className="w-5/12">
-            <h1 className=" text-2xl">
+          <div className=" w-[250px] sm:w-full md:w-5/12 text-center">
+            <h1 className="text-xl md:text-2xl">
               Soy
               <span className="text-hoverorange">
                 {" "}
