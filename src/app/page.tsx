@@ -21,7 +21,8 @@ export default function Home() {
         <Project />
         <Contact />
         </div>
-        <SocialMedia />
+        <div className="relative z-20 md:static">
+        <SocialMedia /></div>
         <Footer />
         
       </main>

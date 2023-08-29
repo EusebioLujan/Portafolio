@@ -63,7 +63,9 @@ export default function Contact(): JSX.Element {
                 placeHolder="Escribe tu nombre"
                 error=""
                 label="Nombre"
+                type="text"
                 onChange={handleInputChange}
+                required
               />
               <Input
                 name="correo"
@@ -73,6 +75,7 @@ export default function Contact(): JSX.Element {
                 label="Correo Electrónico"
                 type="email"
                 onChange={handleInputChange}
+                required
               />
               <Input
                 name="asunto"
@@ -80,6 +83,7 @@ export default function Contact(): JSX.Element {
                 placeHolder="Escribe el asunto"
                 error=""
                 label="Asunto"
+                type="text"
                 onChange={handleInputChange}
               />
               <div className="py-2 w-[250px] md:w-full">

@@ -19,7 +19,7 @@ export default function Skills() {
           Skills
         </h1>
         <div className="flex flex-col justify-center items-center space-y-10">
-          <div className="flex flex-col md:flex-wrap w-6/12 justify-center items-center m-auto relative z-40">
+          <div className="flex flex-col md:flex-wrap w-6/12 md:w-full justify-center items-center m-auto relative z-40">
             <div className="flex space-x-5 my-5 items-center justify-center">
               <Image
                 className="bg-slate-100 rounded-2xl md:h-40 md:w-40 h-20 w-20"

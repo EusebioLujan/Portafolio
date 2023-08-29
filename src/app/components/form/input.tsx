@@ -8,9 +8,10 @@ interface Props{
     label:string;
     onChange?:(event: React.ChangeEvent<HTMLInputElement>) => void
     type?:string
+    required?:boolean
 }
 
-export default function Input({name,value,placeHolder,error,label,onChange,type}:Props) {
+export default function Input({name,value,placeHolder,error,label,onChange,type,required}:Props) {
   return (
     <>
     <div className=" flex flex-col w-10/12 md:w-6/12 lg:w-full justify-center space-y-1 relative z-20">
@@ -22,8 +23,9 @@ export default function Input({name,value,placeHolder,error,label,onChange,type}
                   className="h-8 border-2 border-slate-300 rounded-md p-1 outline-none focus:border-red-300 shadow-sm shadow-white text-black"
                   value={value}
                   onChange={onChange}
+                  required
               />
-              <span>{error && <span className="text-red-500">{error}</span>}</span>
+              <span>{error && <span className="text-red-500 border-2">{error}</span>}</span>
           </div>
   </>
 )}
