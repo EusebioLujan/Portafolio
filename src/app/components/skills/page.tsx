@@ -14,50 +14,46 @@ export default function Skills() {
       <p id="skills" className="my-20 text-[#0F212E]">
         a
       </p>
-      <div className="min-h-screen px-10 m-auto">
-        <h1 className=" text-4xl md:text-6xl font-bold text-center underline mb-20 md:mb-40">
+      <div className="min-h-screen px-4 sm:px-10 m-auto">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-center underline mb-8 sm:mb-20 md:mb-40">
           Skills
         </h1>
         <div className="flex flex-col justify-center items-center space-y-10">
-          <div className="flex flex-col md:flex-wrap w-6/12 md:w-full justify-center items-center m-auto relative z-40">
-            <div className="flex space-x-5 my-5 items-center justify-center">
+          <div className="flex flex-wrap justify-center items-center m-auto relative z-40">
+            <div className="flex flex-wrap justify-center gap-5">
               <Image
-                className="bg-slate-100 rounded-2xl md:h-40 md:w-40 h-20 w-20"
+                className="bg-slate-100 rounded-2xl h-16 w-16 md:h-32 md:w-32"
                 src={css}
                 alt="CSS"
               />
               <Image
-                className="bg-slate-100 rounded-2xl md:h-40 md:w-40 h-20 w-20"
+                className="bg-slate-100 rounded-2xl h-16 w-16 md:h-32 md:w-32"
                 src={html}
                 alt="HTML"
               />
-            </div>
-            <div className="flex space-x-5 my-5 items-center justify-center">
               <Image
-                className="bg-slate-100 rounded-2xl md:h-40 md:w-40 h-20 w-20"
+                className="bg-slate-100 rounded-2xl h-16 w-16 md:h-32 md:w-32"
                 src={js}
                 alt="JS"
               />
               <Image
-                className="bg-slate-100 rounded-2xl md:h-40 md:w-40 h-20 w-20"
+                className="bg-slate-100 rounded-2xl h-16 w-16 md:h-32 md:w-32"
                 src={ts}
                 alt="TS"
               />
-            </div>
-            <div className="flex space-x-5 my-5 items-center justify-center">
               <Image
-                className="bg-slate-100 rounded-2xl md:h-40 md:w-40 h-20 w-20"
+                className="bg-slate-100 rounded-2xl h-16 w-16 md:h-32 md:w-32"
                 src={rx}
                 alt="RX"
               />
               <Image
-                className="bg-slate-100 rounded-2xl md:h-40 md:w-40 h-20 w-20"
+                className="bg-slate-100 rounded-2xl h-16 w-16 md:h-32 md:w-32"
                 src={figma}
                 alt="FIGMA"
               />
             </div>
           </div>
-          <div className="md:w-6/12 md:text-2xl flex justify-center items-center text-center">
+          <div className="px-4 py-10 sm:px-0 md:w-8/12 lg:w-6/12 text-lg sm:text-xl md:text-2xl flex justify-center items-center text-center">
             <h1>
               Mis fortalezas radican en que me concentro en encontrar incluso
               los errores más pequeños y no descanso hasta solucionarlos. Me
