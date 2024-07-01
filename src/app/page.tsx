@@ -19,7 +19,7 @@ export default function Home() {
         <About />
         <Skills />
         <Project />
-        <Contact />
+        //<Contact />
         </div>
         <div className="relative z-20 md:static">
         <SocialMedia /></div>
