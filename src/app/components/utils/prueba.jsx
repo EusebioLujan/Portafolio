@@ -217,9 +217,7 @@ export default function Prueba() {
   return (
     <>
       <div className="relative z-10">
-        {typeof window !== "undefined" && (
-          <canvas  ref={canvasRef}></canvas>
-        )}
+        {typeof window !== "undefined" && <canvas ref={canvasRef}></canvas>}
       </div>
     </>
   );

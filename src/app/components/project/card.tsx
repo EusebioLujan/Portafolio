@@ -38,8 +38,28 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                   {project.information}
                 </p>
                 <div className=" md:mt-4 space-x-2 md:space-x-6">
-                <ButtonR children="Repositorio" alertOptions={{title:'Estoy simulando un Repositorio', confirmButtonText:"Aceptar", imageUrl:"https://i.imgur.com/59RiOZb.png",imageAlt:"meme",imageHeight:300,imageWidth:400}}/>
-                  <ButtonR children="Deploy" alertOptions={{title:'Estoy simulando un deploy', confirmButtonText:"Aceptar", imageUrl:"https://i.imgur.com/59RiOZb.png",imageAlt:"meme",imageHeight:300,imageWidth:400}}/>
+                  <ButtonR
+                    children="Repositorio"
+                    alertOptions={{
+                      title: "Estoy simulando un Repositorio",
+                      confirmButtonText: "Aceptar",
+                      imageUrl: "https://i.imgur.com/59RiOZb.png",
+                      imageAlt: "meme",
+                      imageHeight: 300,
+                      imageWidth: 400,
+                    }}
+                  />
+                  <ButtonR
+                    children="Deploy"
+                    alertOptions={{
+                      title: "Estoy simulando un deploy",
+                      confirmButtonText: "Aceptar",
+                      imageUrl: "https://i.imgur.com/59RiOZb.png",
+                      imageAlt: "meme",
+                      imageHeight: 300,
+                      imageWidth: 400,
+                    }}
+                  />
                 </div>
               </div>
             </div>
