@@ -1,0 +1,17 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Proyecto innovador",
+      "image": "_next/static/media/meme2.106207e4.png",
+      "information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?"
+    },
+    {
+      "id": 2,
+      "title": "Si tuviera uno",
+      "image": "_next/static/media/meme3.ae3e58db.png",
+      "information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?"
+    }
+  ]
+}
+

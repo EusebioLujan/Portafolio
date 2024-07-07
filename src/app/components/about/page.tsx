@@ -11,6 +11,7 @@ export default function About() {
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-center underline mb-10 sm:mb-20 md:mb-40">
           Sobre Mí
         </h1>
+        <div className="bg-[#015560]/50 shadow-lg my-2 shadow-[#015560] md:w-10/12 h-96 rounded-r-2xl rounded-br-2xl flex items-end justify-end"></div>
         <div className="flex flex-col lg:flex-row items-center lg:justify-around lg:w-10/12 ">
           <div className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 flex justify-center">
             <Image
