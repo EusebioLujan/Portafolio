@@ -38,7 +38,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                 </p>
                 <div className=" md:mt-4 space-x-2 md:space-x-6">
                   <ButtonR
-                    children="Repositorio"
+                    text="Repositorio"
                     alertOptions={{
                       title: "Estoy simulando un Repositorio",
                       confirmButtonText: "Aceptar",
@@ -49,7 +49,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                     }}
                   />
                   <ButtonR
-                    children="Deploy"
+                    text="Deploy"
                     alertOptions={{
                       title: "Estoy simulando un deploy",
                       confirmButtonText: "Aceptar",
