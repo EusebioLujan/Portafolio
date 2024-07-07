@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import ButtonR from "./button";
+import { title } from "process";
 
 interface Project {
   id: number;
@@ -36,12 +38,8 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                   {project.information}
                 </p>
                 <div className=" md:mt-4 space-x-2 md:space-x-6">
-                  <button className="my-3 bg-textcolorv/80 text-slate-50 font-bold px-2 p-0.5 rounded-md text-center items-center hover:bg-textcolorv hover:text-slate-50 transition duration-1000 md:hover:scale-110">
-                    Repositorio
-                  </button>
-                  <button className=" my-3 bg-textcolorv/80 text-slate-50 font-bold px-2 p-0.5 rounded-md text-center items-center hover:bg-textcolorv hover:text-slate-50 transition duration-1000 md:hover:scale-110">
-                    Deploy
-                  </button>
+                <ButtonR children="Repositorio" alertOptions={{title:'Estoy simulando un Repositorio', confirmButtonText:"Aceptar", imageUrl:"https://i.imgur.com/59RiOZb.png",imageAlt:"meme",imageHeight:300,imageWidth:400}}/>
+                  <ButtonR children="Deploy" alertOptions={{title:'Estoy simulando un deploy', confirmButtonText:"Aceptar", imageUrl:"https://i.imgur.com/59RiOZb.png",imageAlt:"meme",imageHeight:300,imageWidth:400}}/>
                 </div>
               </div>
             </div>
