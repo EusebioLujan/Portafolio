@@ -11,20 +11,19 @@ export default function Home() {
   return (
     <>
       <main className="min-h-screen scroll-pt-36 text-white">
-        
         <Prueba />
         <NavBar />
         <div className="relative z-20 md:static">
-        <Landing />
-        <About />
-        <Skills />
-        <Project />
-        <Contact />
+          <Landing />
+          <About />
+          <Skills />
+          <Project />
+          <Contact />
         </div>
         <div className="relative z-20 md:static">
-        <SocialMedia /></div>
+          <SocialMedia />
+        </div>
         <Footer />
-        
       </main>
     </>
   );
