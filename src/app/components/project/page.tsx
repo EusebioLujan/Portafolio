@@ -14,7 +14,7 @@ export default function Project() {
           Proyectos
         </h1>
         {/* proyecto 1 */}
-        <div className="flex flex-col md:justify-around my-10 md:items-center">
+        {/* <div className="flex flex-col md:justify-around my-10 md:items-center">
           <div className="flex flex-col md:w-6/12">
             <h1 className="text-4xl">E-Mercado</h1>
             <div className="md:flex md:space-x-4">
@@ -48,7 +48,7 @@ export default function Project() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
