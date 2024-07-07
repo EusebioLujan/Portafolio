@@ -15,7 +15,7 @@ export default function Skills() {
         a
       </p>
       <div className="min-h-screen px-4 sm:px-10 m-auto">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-center underline mb-8 sm:mb-20 md:mb-40">
+        <h1 className="text-shadow-white text-3xl sm:text-4xl md:text-6xl font-bold text-center underline mb-8 sm:mb-20 md:mb-40">
           Skills
         </h1>
         <div className="flex flex-col justify-center items-center space-y-10">

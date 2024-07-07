@@ -29,4 +29,22 @@
 html {
   scroll-behavior: smooth;
 }
-  
+.text-shadow-white-text{
+  color: #00ffc8; /* Color neón */
+  text-shadow: 
+    0 0 5px #ffffff, 
+    0 0 10px #ffffff, 
+    0 0 20px #ffffff, 
+    0 0 40px #02c39a, 
+    0 0 80px #02c39a;
+}
+
+.text-shadow-white{
+  color: #ffffff; /* Color neón */
+  text-shadow: 
+    0 0 5px #02c39a, 
+    0 0 10px #02c39a, 
+    0 0 20px #02c39a, 
+    0 0 40px #02c39a, 
+    0 0 80px #02c39a;
+}

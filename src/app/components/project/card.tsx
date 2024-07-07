@@ -23,7 +23,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
               <h1 className="text-4xl font-bold m-auto p-4">{project.title}</h1>
             </div>
             <div className="flex flex-col xl:flex-row m-auto items-center">
-              <div className="md:w-10/12 m-2 md:pb-8 z-50">
+              <div className="md:w-10/12 m-2 md:pb-8 z-10">
                 <Image
                   src={project?.image}
                   alt={project?.title}
@@ -32,7 +32,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                   className="rounded-t md:w-9/12 m-auto"
                 />
               </div>
-              <div className="w-10/12 m-auto md:w-11/12 z-50">
+              <div className="w-10/12 m-auto md:w-11/12 z-10">
                 <p className="w-full m-auto my-5 md:my-10 text-center items-center">
                   {project.information}
                 </p>

@@ -19,8 +19,8 @@ module.exports = {
         textcolorv:'#02c39a',
       },
       textShadow: {
-       default: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-        lg: '4px 4px 6px rgba(0, 0, 0, 0.5)',
+       pepe: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+        lg: '4px 4px 6px rgba(255, 255, 255, 0.5)',
       },
       boxShadow:{
         'neon': '0 0 10px #015560, 0 0 20px #015560, 0 0 30px #015560, 0 0 40px #015560'

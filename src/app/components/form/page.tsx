@@ -48,7 +48,7 @@ export default function Contact(): JSX.Element {
   return (
     <>
       <div className="min-h-screen px-10 items-center flex flex-col">
-        <h1 id="contacto" className="text-4xl md:text-6xl font-bold text-center underline mb-10 mt-40">
+        <h1 id="contacto" className="text-shadow-white text-4xl md:text-6xl font-bold text-center underline mb-10 mt-40">
           Contacto
         </h1>
         <div className="flex flex-col justify-center items-center mb-20 bg-bgnav/50 py-10 sm:w-full md:w-6/12 rounded-md shadow-md relative z-20">

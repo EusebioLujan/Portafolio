@@ -12,7 +12,7 @@ export default function NavBar(): JSX.Element {
   };
 
   return (
-    <nav className="md:min-h-[80px] min-h-[60px] items-center flex justify-center w-full text-white md:text-xl text-sm px-2 font-semibold sticky top-0 z-50 md:px-10 backdrop-blur-md bg-gray-700/50">
+    <nav className="md:min-h-[80px] min-h-[60px] items-center flex justify-center w-full text-white md:text-xl text-sm px-2 font-semibold sticky top-0 z-50 md:px-10 backdrop-blur-md bg-gray-700/20">
       <div className="flex items-center justify-between md:min-h-[80px] min-h-[60px] md:w-10/12 w-full">
         <Menu onToggle={toggleMenu} isOpen={isMenuOpen} />
         {/* Menú desplegable */}
@@ -22,7 +22,7 @@ export default function NavBar(): JSX.Element {
           }`}
         >
           <Link href="/">
-            <span className="block my-3 text-textcolorv">Inicio</span>
+            <span className="block my-3 text-textcolorv hover:text-shadow-white">Inicio</span>
           </Link>
           <Link href="#sobre-mi">
             <span className="block my-3 text-textcolorv">Sobre mi</span>
