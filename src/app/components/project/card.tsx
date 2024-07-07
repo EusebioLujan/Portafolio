@@ -24,7 +24,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
             <div className="flex flex-col xl:flex-row m-auto items-center">
               <div className="md:w-10/12 m-2 md:pb-8 z-50">
                 <Image
-                  src={`/`+project?.image}
+                  src={`/` + project?.image}
                   alt={project?.title}
                   width={200}
                   height={150}
