@@ -13,7 +13,7 @@ export default function Project() {
       <p id="proyectos" className="my-20 text-[#0F212E]">
         {"a"}
       </p>
-      <div className="min-h-screen px-10 w-full">
+      <div className=" w-full">
         <h1 className="text-shadow-white text-4xl md:text-6xl font-bold text-center underline mb-20">
           Proyectos
         </h1>

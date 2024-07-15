@@ -48,14 +48,14 @@ export default function Contact(): JSX.Element {
 
   return (
     <>
-      <div className=" px-10 items-center flex flex-col">
+      <div className="items-center flex flex-col">
         <h1 id="contacto" className="text-shadow-white text-4xl md:text-6xl font-bold text-center underline mb-10 mt-40">
           Contacto
         </h1>
-        <div className="flex flex-col justify-center items-center mb-20 bg-[#015560]/50 shadow-neon py-10 sm:w-full md:w-6/12 rounded-md shadow-[#015560] border-[#015560] border-2 relative z-20">
+        <div className="flex flex-col justify-center items-center mb-20 bg-[#015560]/50 shadow-neon py-10 sm:w-10/12 md:w-8/12 rounded-md shadow-[#015560] border-[#015560] border-2 relative z-20 w-11/12">
           {!formSubmitted ? (
             <form
-              className="flex flex-col justify-center items-center w-[300px] sm:w-96 relative z-40 "
+              className="flex flex-col justify-center items-center w-full sm:w-96 relative z-40 "
               onSubmit={handleSubmit}
             >
               <Input

@@ -18,7 +18,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
     <div className="w-full z-10">
       {projects.map((project) => (
         <div key={project.id} className=" p-4 rounded flex my-10">
-          <div className="bg-[#015560]/50 shadow-[#015560] md:w-full h-auto flex flex-col shadow-neon text-center items-center md:px-2 rounded-ss-3xl rounded-ee-3xl border-2 border-[#015560]">
+          <div className="bg-[#015560]/50 shadow-[#015560] md:w-full h-auto flex flex-col shadow-neon text-center items-center md:px-2 rounded-ss-3xl rounded-ee-3xl border-2 border-[#015560] ">
             <div className="w-full">
               <h1 className="text-4xl font-bold m-auto p-4">{project.title}</h1>
             </div>

@@ -9,11 +9,12 @@ export default function About() {
       <p id="sobre-mi" className="my-28 md:my-1 text-[#0F212E] text-none">
         a
       </p>
-      <div className="w-11/12 sm:w-10/12 min-h-screen px-4 sm:px-10 flex flex-col justify-center items-center m-auto">
+      <div className="w-full sm:w-10/12 min-h-screen px-4 sm:px-10 flex flex-col justify-center items-center m-auto">
         <h1 className="text-shadow-white text-3xl sm:text-4xl md:text-6xl font-bold text-center underline mb-10 sm:mb-20 md:mb-40">
           Sobre Mí
         </h1>
-        <div className="flex flex-col lg:flex-row items-center lg:justify-around lg:w-10/12 ">
+        <div className="bg-[#015560]/50 shadow-[#015560] md:w-full h-auto flex flex-col shadow-neon text-center items-center md:px-2 rounded-ss-3xl rounded-ee-3xl border-2 border-[#015560] py-8 px-4">
+        <div className="flex flex-col lg:flex-row items-center lg:justify-around lg:w-10/12 m-auto">
           <div className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 flex justify-center">
             <Image
               className="rounded-full w-8/12 sm:w-6/12 md:w-8/12 "
@@ -35,6 +36,7 @@ export default function About() {
               diferencias en cualquier cosa.
             </h1>
           </div>
+        </div>
         </div>
       </div>
     </>

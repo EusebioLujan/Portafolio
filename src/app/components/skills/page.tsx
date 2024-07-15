@@ -14,14 +14,14 @@ export default function Skills() {
       <p id="skills" className="my-20 text-[#0F212E]">
         a
       </p>
-      <div className="min-h-screen px-4 sm:px-10 m-auto">
+      <div className=" w-11/12 md:w-10/12 sm:px-10 m-auto">
         <h1 className="text-shadow-white text-3xl sm:text-4xl md:text-6xl font-bold text-center underline mb-8 sm:mb-20 md:mb-40">
           Skills
         </h1>
         <div className="flex flex-col justify-center items-center space-y-10">
         <div className="bg-[#015560]/50 shadow-[#015560] md:w-full h-auto flex flex-col shadow-neon text-center items-center md:px-2 rounded-ss-3xl rounded-ee-3xl border-2 border-[#015560] pt-8">
           <div className="flex flex-wrap justify-center items-center m-auto relative z-40">
-            <div className="flex flex-wrap justify-center gap-5">
+            <div className="flex flex-wrap justify-center gap-5 px-2">
               <Image
                 className="bg-slate-100 rounded-2xl h-16 w-16 md:h-32 md:w-32"
                 src={css}
@@ -54,7 +54,7 @@ export default function Skills() {
               />
             </div>
           </div>
-          <div className="px-4 py-10 sm:px-0 md:w-8/12 lg:w-6/12 text-lg sm:text-xl md:text-2xl flex justify-center items-center text-center">
+          <div className="px-4 py-10 sm:px-0 md:w-8/12 lg:w-8/12 text-lg sm:text-xl md:text-2xl flex justify-center items-center text-center m-auto ">
             <h1>
               Mis fortalezas radican en que me concentro en encontrar incluso
               los errores más pequeños y no descanso hasta solucionarlos. Me
