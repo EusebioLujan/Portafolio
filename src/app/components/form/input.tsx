@@ -14,7 +14,7 @@ interface Props{
 export default function Input({name,value,placeHolder,error,label,onChange,type,required}:Props) {
   return (
     <>
-    <div className=" flex flex-col w-10/12 md:w-6/12 lg:w-full justify-center space-y-1 relative z-20">
+    <div className=" flex flex-col w-10/12 md:w-6/12 lg:w-[600px] justify-center space-y-1 relative z-20">
               <label className=" font-semibold pb-1">{label}</label>
               <input
               type={type}

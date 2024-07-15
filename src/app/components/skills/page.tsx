@@ -19,6 +19,7 @@ export default function Skills() {
           Skills
         </h1>
         <div className="flex flex-col justify-center items-center space-y-10">
+        <div className="bg-[#015560]/50 shadow-[#015560] md:w-full h-auto flex flex-col shadow-neon text-center items-center md:px-2 rounded-ss-3xl rounded-ee-3xl border-2 border-[#015560] pt-8">
           <div className="flex flex-wrap justify-center items-center m-auto relative z-40">
             <div className="flex flex-wrap justify-center gap-5">
               <Image
@@ -63,6 +64,7 @@ export default function Skills() {
               tengo conocimientos en UX/UI y utilizo herramientas como Figma
               para diseñar páginas web con una visión orientada al usuario.
             </h1>
+          </div>
           </div>
         </div>
       </div>
