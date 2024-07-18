@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useState, ChangeEvent, FormEvent } from "react";
+import emailjs from "emailjs-com";
 import Input from "./input";
 import ShowAlert from "../utils/sweet-alert";
+
 
 interface FormData {
   nombre: string;
@@ -32,30 +34,51 @@ export default function Contact(): JSX.Element {
     }));
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setFormSubmitted(true);
-    ShowAlert({
-      title: "Formulario enviado con éxito",
-      text: "Gracias por enviar el formulario",
-      icon: "success",
-      confirmButtonText:"Aceptar"
-    }).then(() => {
-      setFormData(initialFormData);
+
+    try {
+      await emailjs.sendForm(
+        "service_co19ejb",
+        "template_3atf97o",
+        event.target as HTMLFormElement,
+        "qBXc6V3DWlvGpV-mm"
+      );
+      ShowAlert({
+        title: "Formulario enviado con éxito",
+        text: "Gracias por enviar el formulario",
+        icon: "success",
+        confirmButtonText: "Aceptar",
+      }).then(() => {
+        setFormData(initialFormData);
+        setFormSubmitted(false);
+      });
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+      ShowAlert({
+        title: "Error",
+        text: `Hubo un problema al enviar el formulario:`,
+        icon: "error",
+        confirmButtonText: "Aceptar",
+      });
       setFormSubmitted(false);
-    });
+    }
   };
 
   return (
     <>
       <div className="items-center flex flex-col">
-        <h1 id="contacto" className="text-shadow-white text-4xl md:text-6xl font-bold text-center underline mb-10 mt-40">
+        <h1
+          id="contacto"
+          className="text-shadow-white text-4xl md:text-6xl font-bold text-center underline mb-10 mt-40"
+        >
           Contacto
         </h1>
         <div className="flex flex-col justify-center items-center mb-20 bg-[#015560]/50 shadow-neon py-10 sm:w-10/12 md:w-8/12 rounded-md shadow-[#015560] border-[#015560] border-2 relative z-20 w-11/12">
           {!formSubmitted ? (
             <form
-              className="flex flex-col justify-center items-center w-full sm:w-96 relative z-40 "
+              className="flex flex-col justify-center items-center w-full sm:w-96 relative z-40"
               onSubmit={handleSubmit}
             >
               <Input
