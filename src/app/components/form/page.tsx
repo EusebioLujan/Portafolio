@@ -4,7 +4,12 @@ import React, { useState, ChangeEvent, FormEvent } from "react";
 import emailjs from "emailjs-com";
 import Input from "./input";
 import ShowAlert from "../utils/sweet-alert";
-
+import {
+  YOUR_SERVICE_ID,
+  YOUR_TEMPLATE_ID,
+  YOUR_USER_ID,
+} from "../utils/const";
+import { setTimeout } from "timers";
 
 interface FormData {
   nombre: string;
@@ -40,25 +45,32 @@ export default function Contact(): JSX.Element {
 
     try {
       await emailjs.sendForm(
-        "service_co19ejb",
-        "template_3atf97o",
+        YOUR_SERVICE_ID,
+        YOUR_TEMPLATE_ID,
         event.target as HTMLFormElement,
-        "qBXc6V3DWlvGpV-mm"
+        YOUR_USER_ID
       );
       ShowAlert({
-        title: "Formulario enviado con éxito",
-        text: "Gracias por enviar el formulario",
+        title: "Formulario Enviado con Exito!!!",
+        text: "Gracias, por contactarse conmigo!!",
         icon: "success",
         confirmButtonText: "Aceptar",
       }).then(() => {
         setFormData(initialFormData);
         setFormSubmitted(false);
+
+        setTimeout(() => {
+          const element = document.getElementById("contacto");
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 200);
       });
     } catch (error) {
       console.error("Error al enviar el formulario:", error);
       ShowAlert({
         title: "Error",
-        text: `Hubo un problema al enviar el formulario:`,
+        text: `Hubo un error al Enviar su consulta`,
         icon: "error",
         confirmButtonText: "Aceptar",
       });
@@ -71,7 +83,7 @@ export default function Contact(): JSX.Element {
       <div className="items-center flex flex-col">
         <h1
           id="contacto"
-          className="text-shadow-white text-4xl md:text-6xl font-bold text-center underline mb-10 mt-40"
+          className="text-shadow-white text-4xl md:text-6xl font-bold text-center mb-10 mt-40"
         >
           Contacto
         </h1>
@@ -122,12 +134,14 @@ export default function Contact(): JSX.Element {
               </div>
               <button
                 type="submit"
-                className="bg-textcolorv/80 rounded-lg p-2 w-20 my-2 hover:bg-teal-600 text-white shadow-sm shadow-textcolorv"
+                className="bg-textcolorv/80 rounded-lg p-2 w-20 my-2 hover:bg-teal-600 text-white shadow-sm shadow-textcolorv font-bold"
               >
                 Enviar
               </button>
             </form>
-          ) : null}
+          ) : (
+            <div className="mt-4 font-bold">Enviando...</div>
+          )}
         </div>
       </div>
     </>

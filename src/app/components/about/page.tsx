@@ -10,7 +10,7 @@ export default function About() {
         a
       </p>
       <div className="w-full sm:w-10/12 min-h-screen px-4 sm:px-10 flex flex-col justify-center items-center m-auto">
-        <h1 className="text-shadow-white text-3xl sm:text-4xl md:text-6xl font-bold text-center underline mb-10 sm:mb-20 md:mb-40">
+        <h1 className="text-shadow-white text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-10 sm:mb-20 md:mb-40">
           Sobre Mí
         </h1>
         <div className="bg-[#015560]/50 shadow-[#015560] md:w-full h-auto flex flex-col shadow-neon text-center items-center md:px-2 rounded-ss-3xl rounded-ee-3xl border-2 border-[#015560] py-8 px-4">

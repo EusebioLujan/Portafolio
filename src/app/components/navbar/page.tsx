@@ -21,7 +21,7 @@ export default function NavBar(): JSX.Element {
             isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
         >
-          <Link href="/">
+          <Link href="#">
             <span className="block my-3 text-textcolorv hover:text-shadow-white">Inicio</span>
           </Link>
           <Link href="#sobre-mi">
@@ -39,28 +39,28 @@ export default function NavBar(): JSX.Element {
         </div>
         {/* Menú normal */}
         <div className={`hidden md:flex items-center justify-around w-full ${isMenuOpen ? "md:flex" : ""}`}>
-          <Link href="/">
-            <span className="md:hover:text-hoverorange md:hover:underline">
+          <Link href="#">
+            <span className="md:hover:text-textcolorv md:hover:text-shadow-white transition duration-750 md:hover:scale-110">
               Inicio
             </span>
           </Link>
           <Link href="#sobre-mi">
-            <span className="md:hover:text-hoverorange md:hover:underline">
+            <span className="md:hover:text-textcolorv md:hover:text-shadow-white transition duration-750 md:hover:scale-110">
               Sobre mi
             </span>
           </Link>
           <Link href="#skills">
-            <span className="md:hover:text-hoverorange md:hover:underline">
+            <span className="md:hover:text-textcolorv md:hover:text-shadow-white transition duration-750 md:hover:scale-110">
               Skills
             </span>
           </Link>
           <Link href="#proyectos">
-            <span className="md:hover:text-hoverorange md:hover:underline">
+            <span className="md:hover:text-textcolorv md:hover:text-shadow-white transition duration-750 md:hover:scale-110">
               Proyectos
             </span>
           </Link>
           <Link href="#contacto">
-            <span className="md:hover:text-hoverorange md:hover:underline">
+            <span className="md:hover:text-textcolorv md:hover:text-shadow-white transition duration-750 md:hover:scale-110">
               Contacto
             </span>
           </Link>
