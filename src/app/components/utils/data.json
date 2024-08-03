@@ -12,7 +12,9 @@
       "id": 2,
       "title": "Proyecto innovador",
       "image": ["https://i.imgur.com/AuuSqT0.png","https://i.imgur.com/EITiDGL.png"],
-      "information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?"
+      "information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?",
+      "deploy":"",
+      "repository":""
     }
   ]
 }

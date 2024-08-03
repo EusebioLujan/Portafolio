@@ -3,6 +3,7 @@
 import React from "react";
 import ProjectList from "./card";
 import projectsData from "../utils/data.json";
+
 export default function Project() {
   return (
     <>
@@ -15,7 +16,7 @@ export default function Project() {
         </h1>
         <div className="flex flex-col md:justify-around my-10 md:items-center">
           <div className="md:w-8/12">
-            <ProjectList projects={projectsData.projects} />
+            <ProjectList Projects={projectsData.projects} />
           </div>
         </div>
       </div>

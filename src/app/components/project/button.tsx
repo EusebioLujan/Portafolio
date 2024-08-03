@@ -3,7 +3,7 @@ import React from "react";
 
 interface ButtonProps {
   text: string;
-  url: string;
+  url?: string;
 }
 
 const ButtonR: React.FC<ButtonProps> = ({ text, url }) => {

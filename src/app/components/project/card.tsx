@@ -1,25 +1,24 @@
 import React from "react";
-import Image from "next/image";
 import ButtonR from "./button";
 import Carousel from "./carousel";
 
-interface Project {
+interface Projects {
   id?: number;
   title?: string;
   information?: string;
   image: string[];
-  deploy:string;
-  repository:string;
+  deploy?:string;
+  repository?:string;
 }
 
 interface ProjectListProps {
-  projects: Project[];
+  Projects: Projects[];
 }
 
-const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
+const ProjectList: React.FC<ProjectListProps> = ({ Projects }) => {
   return (
     <div className="w-full z-10">
-      {projects.map((project) => (
+      {Projects.map((project) => (
         <div key={project.id} className=" p-4 rounded flex my-10">
           <div className="bg-[#015560]/50 shadow-[#015560] md:w-full h-auto flex flex-col shadow-neon text-center items-center md:px-2 rounded-ss-3xl rounded-ee-3xl border-2 border-[#015560] ">
             <div className="w-full">
