@@ -80,9 +80,8 @@ export default function Contact(): JSX.Element {
 
   return (
     <>
-      <div className="items-center flex flex-col">
+      <div id="contacto" className="items-center flex flex-col">
         <h1
-          id="contacto"
           className="text-shadow-white text-4xl md:text-6xl font-bold text-center mb-10 mt-40"
         >
           Contacto

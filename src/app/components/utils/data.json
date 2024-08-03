@@ -1,15 +1,17 @@
 {
   "projects": [
     {
-      "id": 1,
-      "title": "Proyecto innovador",
-      "image": "https://i.imgur.com/AuuSqT0.png",
-      "information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?"
+      "id":1,
+      "title":"E-Mercado",
+      "image":["https://i.imgur.com/pWgLX4Y.png","https://i.imgur.com/KlKUQw9.png","https://i.imgur.com/h03ilnm.png","https://i.imgur.com/AyL4Qof.png"],
+      "information":"Este sitio se creo con fines estrictamente educativos. E-Mercado es mi primer proyecto de una pagina de mercado virtual esta programada en html, se programo con varios compañeros de estudio",
+      "deploy":"https://eusebiolujan.github.io/WSI-JaP/",
+      "repository":"https://github.com/EusebioLujan/WSI-JaP"
     },
     {
       "id": 2,
-      "title": "Si tuviera uno",
-      "image": "https://i.imgur.com/EITiDGL.png",
+      "title": "Proyecto innovador",
+      "image": ["https://i.imgur.com/AuuSqT0.png","https://i.imgur.com/EITiDGL.png"],
       "information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit adipisci in deleniti voluptatum ratione temporibus rem? Fugiat, quo. Iusto facilis sit accusantium recusandae beatae, impedit excepturi commodi dignissimos tempore?"
     }
   ]

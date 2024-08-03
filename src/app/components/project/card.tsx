@@ -1,12 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import ButtonR from "./button";
+import Carousel from "./carousel";
 
 interface Project {
-  id: number;
-  title: string;
-  information: string;
-  image: string;
+  id?: number;
+  title?: string;
+  information?: string;
+  image: string[];
+  deploy:string;
+  repository:string;
 }
 
 interface ProjectListProps {
@@ -23,14 +26,8 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
               <h1 className="text-4xl font-bold m-auto p-4">{project.title}</h1>
             </div>
             <div className="flex flex-col xl:flex-row m-auto items-center">
-              <div className="md:w-10/12 m-2 md:pb-8 z-10">
-                <Image
-                  src={project?.image}
-                  alt={project?.title}
-                  width={200}
-                  height={150}
-                  className="rounded-t md:w-9/12 m-auto"
-                />
+              <div className="md:w-full md:h-full m-auto md:pb-8 z-10">
+              <Carousel images={project.image} />
               </div>
               <div className="w-10/12 m-auto md:w-11/12 z-10">
                 <p className="w-full m-auto my-5 md:my-10 text-center items-center">
@@ -39,25 +36,11 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                 <div className=" md:mt-4 space-x-2 md:space-x-6">
                   <ButtonR
                     text="Repositorio"
-                    alertOptions={{
-                      title: "Estoy simulando un Repositorio",
-                      confirmButtonText: "Aceptar",
-                      imageUrl: "https://i.imgur.com/59RiOZb.png",
-                      imageAlt: "meme",
-                      imageHeight: 300,
-                      imageWidth: 400,
-                    }}
+                    url={project.repository}
                   />
                   <ButtonR
                     text="Deploy"
-                    alertOptions={{
-                      title: "Estoy simulando un deploy",
-                      confirmButtonText: "Aceptar",
-                      imageUrl: "https://i.imgur.com/59RiOZb.png",
-                      imageAlt: "meme",
-                      imageHeight: 300,
-                      imageWidth: 400,
-                    }}
+                    url={project.deploy}
                   />
                 </div>
               </div>
