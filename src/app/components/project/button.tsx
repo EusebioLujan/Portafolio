@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import ShowAlert from "../utils/sweet-alert";
 
 interface ButtonProps {
   text: string;
@@ -11,7 +12,12 @@ const ButtonR: React.FC<ButtonProps> = ({ text, url }) => {
     if (url) {
       window.open(url, "_blank");
     } else {
-      alert("URL not available");
+      ShowAlert({
+        title: "URL no disponible",
+        text: "No se ha proporcionado una URL para este botón.",
+        icon: "error",
+        confirmButtonText: "Aceptar",
+      });
     }
   };
   return (
